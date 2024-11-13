@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import LatestNews from "../components/LatestNews";
+import Navbar from "../components/Navbar";
 
 const HomeLayout = () => {
   return (
@@ -8,7 +9,9 @@ const HomeLayout = () => {
         <Header></Header>
         <LatestNews></LatestNews>
       </header>
-      <nav></nav>
+      <nav>
+        <Navbar></Navbar>
+      </nav>
       <main></main>
     </div>
   );
