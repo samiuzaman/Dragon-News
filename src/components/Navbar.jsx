@@ -10,9 +10,9 @@ const Navbar = () => {
         <Link to="/about">About</Link>
         <Link to="/career">Career</Link>
       </div>
-      <div className="flex gap-2">
+      <div className="flex gap-2 h-8">
         <img src={UserIcon}></img>
-        <button className="bg-[#403F3F] text-white text-xl font-semibold px-5">
+        <button className="bg-[#403F3F] text-white text-lg font-medium px-5">
           Login
         </button>
       </div>

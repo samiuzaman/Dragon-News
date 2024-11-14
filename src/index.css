@@ -7,3 +7,18 @@
 body {
   @apply font-Poppins;
 }
+
+.categoryBtn {
+  @apply border-none justify-start text-[#757575] hover:bg-[#E7E7E7] hover:text-[#403F3F];
+}
+a.active {
+  @apply bg-[#E7E7E7];
+}
+
+.descriptionStyle {
+  height: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:clip;
+  text-wrap:wrap
+}
