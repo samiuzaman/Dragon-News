@@ -3,6 +3,7 @@ import { IoShareSocialOutline } from "react-icons/io5";
 import { IoEyeSharp } from "react-icons/io5";
 import Rating from "react-rating";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const NewsPost = ({ news }) => {
   const { author, image_url, title, total_view, rating, details } = news;
@@ -18,9 +19,7 @@ const NewsPost = ({ news }) => {
           </div>
           <div>
             <h4 className="text-base font-semibold text-[#403F3F]">{name}</h4>
-            <p className="text-sm text-[#706F6F]">
-              {published_date.slice(0, 11)}
-            </p>
+            <p className="text-sm text-[#706F6F]">{published_date}</p>
           </div>
         </div>
         <div className="flex gap-4">
@@ -34,7 +33,12 @@ const NewsPost = ({ news }) => {
         <p className="descriptionStyle text-[#706F6F] text-base font-medium mb5">
           {details}
         </p>
-        <span className=" text-[#FF8C47FF] cursor-pointer">Read More</span>
+        <Link
+          to={`/news/${news?._id}`}
+          className=" text-[#FF8C47FF] cursor-pointer"
+        >
+          Read More
+        </Link>
         <div className="divider"></div>
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
