@@ -5,7 +5,7 @@ import Qzone from "./Qzone";
 
 const RightNavbar = () => {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 grid grid-cols-2 lg:grid-cols-1 justify-between">
       <LoginWith></LoginWith>
       <Findus></Findus>
       <Qzone></Qzone>
